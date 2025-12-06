@@ -1,0 +1,15 @@
+-- Create datawarehous and schemas
+
+USE MASTER;
+
+-- CREATE THE DATAWAREHOUSE
+CREATE DATABASE DataWarehouse;
+
+USE DataWarehouse;
+GO
+-- HERE WE CREATE THE SCHEMAS
+CREATE SCHEMA bronze;
+GO
+CREATE SCHEMA silver;
+GO
+CREATE SCHEMA gold;
