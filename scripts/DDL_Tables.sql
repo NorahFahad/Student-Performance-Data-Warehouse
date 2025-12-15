@@ -87,3 +87,12 @@ CREATE INDEX idx_perf_student ON Fact_Performance(student_key);
 CREATE INDEX idx_perf_course ON Fact_Performance(course_key);
 CREATE INDEX idx_attend_student ON Fact_Attendance(student_key);
 CREATE INDEX idx_attend_course ON Fact_Attendance(course_key);
+
+
+
+ALTER TABLE Dim_Student
+ADD college VARCHAR(100),
+    department VARCHAR(100);
+
+CREATE INDEX idx_student_college ON Dim_Student(college);
+CREATE INDEX idx_student_department ON Dim_Student(department);
